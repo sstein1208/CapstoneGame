@@ -7,6 +7,7 @@ TagManager:
   - Sphere
   - Target
   - WinText
+  - Trash
   layers:
   - Default
   - TransparentFX
