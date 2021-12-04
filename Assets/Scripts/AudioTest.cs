@@ -4,13 +4,13 @@ using UnityEngine;
   //Add this Script Directly to The Death Zone
  public class AudioTest : MonoBehaviour
  {
-     public AudioClip Bell_1_b;    // Add your Audi Clip Here;
+     public AudioClip sound;    // Add your Audi Clip Here;
      // This Will Configure the  AudioSource Component; 
      // MAke Sure You added AudioSouce to death Zone;
      void Start ()   
      {
          GetComponent<AudioSource> ().playOnAwake = false;
-         GetComponent<AudioSource> ().clip = Bell_1_b;
+         GetComponent<AudioSource> ().clip = sound;
      }        
  
      void OnCollisionEnter ()  //Plays Sound Whenever collision detected
