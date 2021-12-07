@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="GWorld_Logo" size="0.050800 0.035202" />
+    <ImageTarget name="Back" size="0.088900 0.057074" />
+    <ImageTarget name="Front" size="0.056430 0.088898" />
+  </Tracking>
+</QCARConfig>
