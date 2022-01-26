@@ -19,7 +19,7 @@ public class SwipeScript : MonoBehaviour {
 
 	void Start()
 	{
-        sphere.SetActive(false);
+        //sphere.SetActive(false);
 		rb = GetComponent<Rigidbody> ();
 	}
 

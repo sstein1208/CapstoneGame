@@ -22,6 +22,8 @@ public class TargetCollision : MonoBehaviour
     public GameObject star2;
     public GameObject star3;
 
+    
+
      
 
     // Start is called before the first frame update

@@ -11,6 +11,11 @@ TagManager:
   - FirstTextCanvas
   - SecondTextCanvas
   - WinTextCanvas
+  - Fluid
+  - Star
+  - Star1
+  - Star2
+  - Star3
   layers:
   - Default
   - TransparentFX
