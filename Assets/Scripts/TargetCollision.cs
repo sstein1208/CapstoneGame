@@ -46,6 +46,10 @@ public class TargetCollision : MonoBehaviour
                 //automatically give 3 stars
                 num_stars = 3;
             }
+            else{
+                //displauy correct number of stars
+                num_stars = 0;
+            }
             Debug.Log("Trying to stop ball's velocity");
             StartCoroutine(Text());
             //WinText.enabled = true;

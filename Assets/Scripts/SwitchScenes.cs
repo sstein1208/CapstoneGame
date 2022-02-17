@@ -14,16 +14,6 @@ public class SwitchScenes: MonoBehaviour {
     public void Help() {  
         SceneManager.LoadScene("Help");  
     }  
-    public void TestLevel() {  
-        SceneManager.LoadScene("TestLevel");  
-    }  
-    public void OfficeLevel(){
-        SceneManager.LoadScene("OfficeLevel");  
-
-    } 
-    public void MainMenu() {  
-        SceneManager.LoadScene("MainMenu");  
-    } 
     public void Tutorial() {  
         // FirstTextCanvas = GameObject.FindWithTag("FirstTextCanvas");
         // FirstTextCanvas.SetActive(true);
@@ -33,7 +23,43 @@ public class SwitchScenes: MonoBehaviour {
         // WinTextCanvas.SetActive(false); 
         SceneManager.LoadScene("Tutorial"); 
     } 
-
+    public void TestLevel() {  
+        SceneManager.LoadScene("TestLevel");  
+    }  
     
+    public void MainMenu() {  
+        SceneManager.LoadScene("MainMenu");  
+    } 
+    public void OfficeLevel(){
+        SceneManager.LoadScene("Office");  
+    } 
+    public void KitchenLevel(){
+        SceneManager.LoadScene("Kitchen");  
+    } 
 
+    public void BedroomLevel(){
+        SceneManager.LoadScene("Bedroom");  
+    } 
+
+    public void CoffeeShopLevel(){
+        SceneManager.LoadScene("CoffeeShop");  
+    } 
+    public void GameRoomLevel(){
+        SceneManager.LoadScene("GameRoom");  
+    } 
+    public void GardenLevel(){
+        SceneManager.LoadScene("Garden");  
+    } 
+    public void LibraryLevel(){
+        SceneManager.LoadScene("Library");  
+    } 
+    public void MorgueLevel(){
+        SceneManager.LoadScene("Morgue");  
+    } 
+    public void SchoolLevel(){
+        SceneManager.LoadScene("School");  
+    } 
+    public void WesternLevel(){
+        SceneManager.LoadScene("Western");  
+    } 
 } 

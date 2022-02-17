@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class StarCollision : MonoBehaviour
 {
-    public GameObject Star1;
-    public GameObject Star2;
-    public GameObject Star3;
+    // public GameObject Star1;
+    // public GameObject Star2;
+    // public GameObject Star3;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,18 +18,25 @@ public class StarCollision : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter(Collision collision){
+    void OnTriggerEnter(Collider collision){
        
-        if(collision.gameObject.CompareTag("Star1")){
+        if(collision.gameObject.CompareTag("Star")){
             //Delete Start 1
-            Star1.SetActive(false);
+            collision.gameObject.SetActive(false);
         }
-        if(collision.gameObject.CompareTag("Star2")){
-            Star2.SetActive(false);
+        if(collision.gameObject.CompareTag("Target")){
+            //Stop the ball
+            collision.gameObject.SetActive(false);
+            Rigidbody rb = this.gameObject.GetComponent<Rigidbody>();
+            rb.velocity = new Vector3();
+            this.gameObject.SetActive(false);
+        }
+        // if(collision.gameObject.CompareTag("Star2")){
+        //     Star2.SetActive(false);
 
-        }
-        if(collision.gameObject.CompareTag("Star3")){
-            Star3.SetActive(false);
-        }
+        // }
+        // if(collision.gameObject.CompareTag("Star3")){
+        //     Star3.SetActive(false);
+        // }
     }
 }
