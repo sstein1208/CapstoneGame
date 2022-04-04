@@ -16,7 +16,7 @@ public class TargetCollision : MonoBehaviour
     public Canvas WTC;
     public Canvas STC;
     public Canvas FTC;
-    public int num_stars;
+    public int num_stars = 0;
     public TMP_Text wintext;
     public GameObject star1;
     public GameObject star2;
@@ -29,15 +29,20 @@ public class TargetCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sphereRB = GetComponent<Rigidbody>();
+        //sphereRB = GetComponent<Rigidbody>();
         //WinText.enabled = false;
     }
 
     // Update is called once per frame
 
-    void OnCollisionEnter(Collision collision){
+    void OnTriggerEnter(Collider collision){
        
-        if(collision.gameObject.CompareTag("Target")){
+        if(collision.gameObject.CompareTag("Star")){
+
+            num_stars++;
+
+
+
             //stop the ball's velocity
             //sphereRB.velocity = Vector3.zero;
             //sphereRB.angularVelocity = Vector3.zero;
@@ -50,8 +55,8 @@ public class TargetCollision : MonoBehaviour
                 //displauy correct number of stars
                 num_stars = 0;
             }
-            Debug.Log("Trying to stop ball's velocity");
-            StartCoroutine(Text());
+            //Debug.Log("Trying to stop ball's velocity");
+            //StartCoroutine(Text());
             //WinText.enabled = true;
             //collision.gameObject.GetComponent<AudioSource>().Play();
         }

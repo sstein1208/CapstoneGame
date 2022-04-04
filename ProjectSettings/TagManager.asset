@@ -16,6 +16,12 @@ TagManager:
   - Star1
   - Star2
   - Star3
+  - Miss
+  - StarDisplay
+  - Lock1
+  - Level1Button
+  - LevelsCanvas
+  - StarCount
   layers:
   - Default
   - TransparentFX
