@@ -8,6 +8,20 @@ TagManager:
   - Target
   - WinText
   - Trash
+  - FirstTextCanvas
+  - SecondTextCanvas
+  - WinTextCanvas
+  - Fluid
+  - Star
+  - Star1
+  - Star2
+  - Star3
+  - Miss
+  - StarDisplay
+  - Lock1
+  - Level1Button
+  - LevelsCanvas
+  - StarCount
   layers:
   - Default
   - TransparentFX

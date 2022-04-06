@@ -14,9 +14,12 @@ public class SwipeScript : MonoBehaviour {
 	float throwForceInZ = 50f; // to control throw force in Z direction
 
 	Rigidbody rb;
+    public GameObject sphere;
+    
 
 	void Start()
 	{
+        //sphere.SetActive(false);
 		rb = GetComponent<Rigidbody> ();
 	}
 
@@ -51,7 +54,7 @@ public class SwipeScript : MonoBehaviour {
 			rb.AddForce (- direction.x * throwForceInXandY, - direction.y * throwForceInXandY, throwForceInZ / timeInterval);
 
 			// Destroy ball in 4 seconds
-			Destroy (gameObject, 3f);
+			//Destroy (gameObject, 3f);
 
 		}
 			
