@@ -53,35 +53,35 @@ public class StarCollision : MonoBehaviour
             GameObject star2 = WTC.transform.GetChild(0).GetChild(0).GetChild(1).gameObject;
             GameObject star3 = WTC.transform.GetChild(0).GetChild(0).GetChild(2).gameObject;
 
-            if(Stats.num_stars == 3 || Stats.num_stars == Stats.max_num_stars){
+            //if(Stats.num_stars == 3 || Stats.num_stars == Stats.max_num_stars){
                 //display 3 stars
-                wintext.GetComponent<TextMeshPro>().text = "Level Complete!";
-                Stats.totalStarCount += 3;
-                Debug.Log("collected 3 stars in tutorial");
-            }
-            if(Stats.num_stars == 2){
-                //display 2 stars
-                wintext.GetComponent<TextMeshPro>().text = "Level Complete!";
-                star3.SetActive(false);
-                Stats.totalStarCount += 2;
+           // wintext.GetComponent<TextMeshPro>().text = "Level Complete!";
+                //Stats.totalStarCount += 3;
+            Debug.Log("collected 3 stars in tutorial");
+            //\\\\\}
+            // if(Stats.num_stars == 2){
+            //     //display 2 stars
+            //     wintext.GetComponent<TextMeshPro>().text = "Level Complete!";
+            //     star3.SetActive(false);
+            //     Stats.totalStarCount += 2;
 
-            }
-            if(Stats.num_stars == 1){
-                //display 1 star
-                wintext.GetComponent<TextMeshPro>().text = "Level Complete!";
-                star2.SetActive(false);
-                star3.SetActive(false);
-                Stats.totalStarCount += 1;
+            // }
+            // if(Stats.num_stars == 1){
+            //     //display 1 star
+            //     wintext.GetComponent<TextMeshPro>().text = "Level Complete!";
+            //     star2.SetActive(false);
+            //     star3.SetActive(false);
+            //     Stats.totalStarCount += 1;
 
-            }
-            if(Stats.num_stars == 0){
-                wintext.GetComponent<TextMeshPro>().text = "Try Again?";
-                //display no stars
-                star1.SetActive(false);
-                star2.SetActive(false);
-                star3.SetActive(false);
+            //}
+            // if(Stats.num_stars == 0){
+            //     wintext.GetComponent<TextMeshPro>().text = "Try Again?";
+            //     //display no stars
+            //     star1.SetActive(false);
+            //     star2.SetActive(false);
+            //     star3.SetActive(false);
 
-            }
+            // }
            
 
 

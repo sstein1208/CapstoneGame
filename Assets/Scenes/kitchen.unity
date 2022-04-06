@@ -2234,6 +2234,10 @@ PrefabInstance:
       propertyPath: pushForce
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 1576383618558566249, guid: 83c365a9872fc444aa6fec1e2d8f4fbd, type: 3}
+      propertyPath: ballPrefab
+      value: 
+      objectReference: {fileID: 1920450985114119947, guid: d54b945744aad46e7bd3a79e5255f9c1, type: 3}
     - target: {fileID: 6679317379123441117, guid: 83c365a9872fc444aa6fec1e2d8f4fbd, type: 3}
       propertyPath: time
       value: 0
